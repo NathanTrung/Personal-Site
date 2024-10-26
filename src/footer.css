@@ -181,3 +181,29 @@
   object-fit: contain; /* Ensures the image scales without distortion */
   vertical-align: middle;
 }
+
+@media screen and (max-width: 650px) {
+  .footerText { 
+    display:none;
+  }
+}
+
+@media (max-width: 400px) {
+  .footerText { 
+    display: none;
+  }
+ } 
+@media (max-width: 480px) { 
+  .footerText { 
+    display: none;
+} } 
+@media (max-width: 768px) { 
+  .footerText { 
+    display: none;
+  }
+} 
+@media (max-width: 900px) { 
+  .footerText { 
+    display: none;
+  }
+} 

@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-logo">
           <img src={logo} alt="Logo" className="Logo2 button-press"/>
-          <p style = {{maxWidth: '600px', wordWrap: 'break-word', lineHeight: '1.6', margin: '15px' }}>Hi there! I'm Nathan Trung, a Software Development Student at Swinburne University of Technology. I’m passionate about leveraging technology to create innovative, scalable & robust solutions. Whether you want to collaborate on a project or just chat about the latest trends in software development, feel free to reach out! Let's build something great together.
+          <p style = {{maxWidth: '600px', wordWrap: 'break-word', lineHeight: '1.6', margin: '15px' }} className="footerText">Hi there! I'm Nathan Trung, a Software Development Student at Swinburne University of Technology. I’m passionate about leveraging technology to create innovative, scalable & robust solutions. Whether you want to collaborate on a project or just chat about the latest trends in software development, feel free to reach out! Let's build something great together. 
           </p>
         </div>
         <div className="footer-links">

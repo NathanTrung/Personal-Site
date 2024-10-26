@@ -65,7 +65,7 @@ h6,
     margin: 0 0 10px 0;
     font-size: 22px;
     line-height: normal;
-    font-weight: normal;
+    font-weight: bolder;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -665,3 +665,51 @@ PartnerButtons {
     object-fit: contain; /* Ensures the image scales without distortion */
 }
 
+/* Update the list items to stack vertically on smaller screens */
+@media screen and (max-width: 900px) {
+    .elements {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .elements li {
+        width: 80%; /* Make each item take up most of the width */
+        margin-bottom: 20px; /* Space between items */
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+/* Add styles for images to ensure they are responsive */
+.Profile {
+    width: 100%; /* Make the image take up full width of the parent */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive margin for the headings and paragraphs */
+@media screen and (max-width: 900px) {
+    .center {
+        margin-bottom: 40px; /* Adjust spacing for smaller screens */
+    }
+
+    h3 {
+        margin-bottom: 40px; /* Reduce bottom margin for the heading */
+    }
+}
+
+/* Adjust button styles for mobile */
+.button-press a {
+    padding: 12px; /* Increase button padding for better touch targets */
+    font-size: 1rem; /* Increase font size for better readability */
+}
+
+/* Add some additional styling for smaller screens */
+@media screen and (max-width: 650px) {
+    .button-press a {
+        font-size: 0.9rem; /* Slightly decrease font size */
+    }
+
+    h3 {
+        font-size: 1.5rem; /* Make the heading smaller */
+    }
+}

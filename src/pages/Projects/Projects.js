@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: "SwinBull",
-    description: "SwinBull is a collaborative web application developed by students from Swinburne University of Technology using the React.js framework. This innovative platform allows users to explore and view various cryptocurrency assets by integrating the CoinGecko API. SwinBull aims to provide a valuable resource for cryptocurrency enthusiasts, combining technology and finance to foster informed investment decisions.",
+    description: "SwinBull is a collaborative web application developed by students from Swinburne University of Technology using the React.js framework. This innovative platform allows users to explore and view various cryptocurrency assets by integrating the CoinGecko API. SwinBull aims to provide a valuable resource for cryptocurrency enthusiasts.",
     link: "https://github.com/NathanTrung/N-A-Movies",
     image: SwinBullLogo,
     github: "https://github.com/NathanTrung/SwinBull",
@@ -39,7 +39,7 @@ const projects = [
 },
 {
   title: "SwinDevOps",
-  description: "A project focused on automating a Continuous Integration/Continuous Delivery Pipeline with Technologies such as; Docker, Jenkins, AWS (EC2). The primary objective of this project is to design, build & implement a fully functional DevOps pipeline that is able to automate the following processes for a simple static website; development, testing & deployment. ",
+  description: "A project focused on automating a CI/CD Pipeline with Technologies such as; Docker, Jenkins, AWS (EC2). The objective of this project is to design, build & implement a functional DevOps pipeline that is able to automate processes for a simple static website.",
   image: SwinDevOpsLogo,
   github: "https://github.com/NathanTrung/swindevops",
 },

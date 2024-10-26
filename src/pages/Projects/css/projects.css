@@ -11,6 +11,7 @@
 .projects-title {
     font-size: 2.5em;
     font-weight: bold;
+    padding-top: 210px;
 }
 
 .projects-subtitle {
@@ -19,7 +20,6 @@
 	font-weight: bolder;
 	font-style:italic;
     color: bl;
-	margin-top:120px;
     margin-bottom: 40px;
 }
 
@@ -146,6 +146,118 @@
 @media (max-width: 600px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+}
+/* Enhancements for small screens */
+@media (max-width: 768px) {
+    .projects-title {
+        font-size: 2em;
+    }
+
+    .projects-subtitle {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+
+    .project-card {
+        padding: 20px;
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 180px; /* Fixed height for consistency */
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+
+    .project-info {
+        padding: 15px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .project-info h2 {
+        font-size: 1.4em;
+    }
+
+    .project-info p {
+        font-size: 0.9em;
+    }
+
+    .project-link {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+
+    .enlarged-image {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Enhancements for extra small screens */
+@media (max-width: 480px) {
+    .projects-title {
+        font-size: 1.8em;
+    }
+
+    .projects-subtitle {
+        font-size: 1.2em;
+        margin: 15px 0;
+    }
+
+    .project-card {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .project-image {
+        max-width: 100%;
+        height: 160px; /* Fixed height for smaller screens */
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-radius: 6px;
+    }
+
+    .project-info h2 {
+        font-size: 1.2em;
+    }
+
+    .project-info p {
+        font-size: 0.8em;
+    }
+
+    .project-link {
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+
+    .enlarged-image {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* Ensure lightbox takes up full screen on mobile */
+@media (max-width: 600px) {
+    .lightbox {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .enlarged-image {
+        max-width: 100%;
+        height: auto;
     }
 }
 

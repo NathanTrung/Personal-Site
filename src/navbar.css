@@ -105,3 +105,41 @@ nav {
     object-fit: contain; /* Ensures the image scales without distortion */
     vertical-align: middle;
 }
+@media (max-width: 768px) {
+    .navbar-left img {
+        height: 40px;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-left img {
+        height: 30px;
+        margin-left: 5px;
+    }
+}
+
+/* Refine the right elements on medium screens */
+@media (max-width: 768px) {
+    .navbar-right li {
+        font-size: 14px; /* Smaller font size */
+        padding: 6px 15px; /* Further reduced padding */
+    }
+
+    .navbar-right {
+        margin-right: 5px; /* Minimal right margin */
+        height: 35px; /* Smaller height to match logo size */
+    }
+}
+
+/* Refine the right elements on small screens */
+@media (max-width: 480px) {
+    .navbar-right li {
+        font-size: 12px; /* Further reduce font size */
+        padding: 4px 10px; /* Compact padding for smallest screens */
+    }
+
+    .navbar-right {
+        margin-right: 2px; /* Almost no right margin */
+        height: 25px; /* Align height with smallest logo size */
+    }
+}

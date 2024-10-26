@@ -18,7 +18,7 @@ class Welcome extends React.Component {
   <div id="pageintro" class="hoc clear"> 
     <div class="one_half first">
       <h1 class="uppercase" style={{ paddingTop: "75px"}}><b>Nathan Trung</b></h1>
-      <h2 className="heading">Software Development Student <FontAwesomeIcon icon={faAt} /> <br/> Swinburne University of Technology <a href="https://www.swinburne.edu.au/"><img src={SwinburneLogo} alt="Swinburne University Logo" className="logo button-press"/></a> </h2>
+      <h2 className="heading" style={{fontWeight:"normal"}}>Computer Science Student <FontAwesomeIcon icon={faAt} style={{fontWeight:"normal"}}/> <br/> Swinburne University of Technology <a href="https://www.swinburne.edu.au/"><img src={SwinburneLogo} alt="Swinburne University Logo" className="logo button-press"/></a> </h2>
       <p>Welcome to my personal website! I am currently pursuing a degree in Software Development at Swinburne University. With strong proficiencies in Software & Web Development, Network administration, DevOps, and Game Development using Unity, I am dedicated to enhancing the Software Development Lifecycle.</p>
       <p>My focus is on Object-Oriented Programming (OOP) principles, emphasizing encapsulation, inheritance, and polymorphism to create modular, maintainable, and efficient software solutions.</p>
       <br></br>
