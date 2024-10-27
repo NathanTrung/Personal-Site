@@ -16,6 +16,12 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Nathan Trung</title>
+    <script>
+      if (window.location.hostname === "nathantrung.web.app") {
+        window.location.replace("https://www.nathantrung.com" + window.location.pathname);
+      }
+    </script>
+    
   </head>
   <body>
     <div id="root"></div>

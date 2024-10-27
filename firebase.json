@@ -1,15 +1,27 @@
 {
   "hosting": {
-    "public": "build", 
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      {
+        "source": "nathantrung.web.app/**",
+        "destination": "https://www.nathantrung.com",
+        "type": 301
+      },
+      {
+        "source": "nathantrung.com/**",
+        "destination": "https://www.nathantrung.com",
+        "type": 301
+      }
+    ],
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html" 
+        "destination": "/index.html"
       }
     ]
   }

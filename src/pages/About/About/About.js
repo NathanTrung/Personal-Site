@@ -37,7 +37,7 @@ class Info extends React.Component {
                   <article>
                   <i className="fa fa-university"></i>
                     <h6 className="heading">Education</h6>
-                    <p>⦿ Bachelor of Business/Information Technology <br></br>(2021 - 2021)<br></br><ul><li>Major in Accounting & Web Development</li></ul>⦿ Bachelor of Computer Science <br></br>(2022 - 2025)<ul><li>Major in Software Development & Internet of Things</li></ul></p>
+                    <p>⦿ Bachelor of Business/Information Technology <br></br>Monash University (2021 - 2021)<br></br><ul><li>Major in Accounting & Web Development</li></ul>⦿ Bachelor of Computer Science <br></br>Swinburne University (2022 - 2025)<ul><li>Major in Software Development & Internet of Things</li></ul></p>
                   </article>
                 </li>
                 <li className="one_third">
