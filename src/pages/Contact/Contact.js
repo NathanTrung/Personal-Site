@@ -65,7 +65,7 @@ const Contact = () => {
                 <h4 style={{ marginTop: "100px" }}>Contact Me</h4>
                 <div className="my-story">
       <p>
-      If you have any questions, inquiries, or opportunities for collaboration, feel free to reach out! I'm always open to connecting with others who share my passion for technology and development. You can contact me via email at through the form or through my social media profiles.
+      If you have any questions, inquiries, or opportunities for collaboration, feel free to reach out!<br></br> I'm always open to connecting with others who share my passion for technology and development.<br></br> You can contact me via email through the form or through my social media profiles.
       </p>
     </div>
                 <div>
