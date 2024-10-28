@@ -29,30 +29,42 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" >
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
+
     <title>Nathan Trung</title>
     <script>
       if (window.location.hostname === "nathantrung.web.app") {
         window.location.replace("https://www.nathantrung.com" + window.location.pathname);
       }
     </script>
-    <script type="applcation/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nathan Trung",
-        "url": "https://wwww.nathantrung.com/"
-        "sameAs": [
-          "https://github.com/NathanTrung"
-          "https://www.linkedin.com/in/nathan-trung/"
-        ],
-        "jobTitle": "Software Developer",
-        "worksFor": { 
-          "@type": "Organization",
-          "name": "Swinburne University of Technology"
-        }
-      }
-    </script>
+
   </head>
+  <script type="applcation/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nathan Trung",
+      "url": "https://wwww.nathantrung.com/",
+      "sameAs": [
+        "https://github.com/NathanTrung",
+        "https://www.linkedin.com/in/nathan-trung/"
+      ],
+      "jobTitle": "Software Developer",
+      "worksFor": { 
+        "@type": "Organization",
+        "name": "Swinburne University of Technology"
+      }
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFM2HN0JVK"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-HFM2HN0JVK');
+
+</script>
   <body>
     <div id="root"></div>
   </body>

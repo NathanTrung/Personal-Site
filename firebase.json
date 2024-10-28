@@ -1,11 +1,23 @@
 {
   "hosting": {
+    "headers": [
+      {
+        "source": "/public/favicon.ico",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
+    ],
     "public": "build",
     "ignore": [
-      "firebase.json",
+      "firebase.json", 
       "**/.*",
       "**/node_modules/**"
     ],
+    
     "redirects": [
       {
         "source": "nathantrung.web.app/**",

@@ -1,4 +1,7 @@
 @charset "utf-8";
+body, div { 
+	background-color: #eae7dc;
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -38,7 +41,6 @@
 
 * { 
 	color: black;
-	background-color: #eae7dc;
 }
 
 wrapper bgded overlay { 
@@ -469,7 +471,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 .chrono-section {
 	padding: 20px;
-	background-color: white; /* Light background for contrast */
+	background-color: #eae7dc; /* Light background for contrast */
 	border-radius: 10px;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
@@ -499,41 +501,43 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 	order: 2;  /* Ensures even items align to the other side */
   }
   
- .edCynq, .chhhHa {
-	background-color: black;
+  .ToolbarListItem-sc-exupb5-1, .vertical-timeline-element-content, .vertical-timeline-element-subtitle, .vertical-timeline-element-title, .vertical-timeline, .vertical-timeline-element:first-child, .vertical-timeline--animate, .vertical-timeline-element-content.bounce-in, .vertical-timeline-element-date, .vertical-timeline-element, .vertical-timeline {
+	background: white;
+   }
+
+   .vertical-timeline * { 
+	background-color: white;
+   }
+
+   .vertical-timeline {
+	/* Adjust the height and width of the timeline container */
+	padding: 2rem; /* Add some padding around the timeline */
+	width: 80%; /* Make the timeline wider */
+	margin: auto; /* Center the timeline horizontally */
+	border-radius: 12px; /* Round the edges */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+  .vertical-timeline-element {
+	/* Adjust the size of the timeline elements */
+	padding: 1.5rem; /* Increase padding for larger elements */
+	border-radius: 12px; /* Round the edges */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+	margin: 1.5rem 0; /* Increase the vertical margin between elements */
+  }
+  
+  /* Customize the title and subtitle styles if necessary */
+  .vertical-timeline-element-title {
+	font-size: 1.5rem; /* Increase the title font size */
+  }
+  
+  .vertical-timeline-element-subtitle {
+	font-size: 1.2rem; /* Increase the subtitle font size */
   }
 
-  .timeline-main-wrapper, .js-focus-visible, .hxLLRt, .dBAArN, .prJHE, .fwRzpx, .dFjtWj, .ipzOQK, .huEMSX, .iRPFCD, .fxAXuQ, .jMjqKd, .qXkRp, .bpKuBe, .iycNNg, .dBAArN, .rc-card-subtitle, .rc-card-title, .jIatKG, .rc-card-text, .jaQaOm, .euzQEK, .backgroundEasy { 
-	background-color: white !important;
-	color: black;
-
+  .vertical-timeline-element img {
+	max-width: 100%; /* Ensures the image doesn't overflow its container */
+	height: auto; /* Maintains aspect ratio */
   }
-  .bMwRLQ, .jCcKgB, .bYGPJg, .CBBYv, .fVncYp, .PopoverWrapper-sc-168kw5q-0, .ljpfaE, .dBBdVP, .iTlOsS, .ewrSlD, .bBVzyK, .jgZoZE, .iUZmIw, .jMjqKd, .jsBALF, span, .jHeaAq.visible, .bgsPke, .gyFIuQ, .dkBrNG { 
-	background-color: white !important;
-	color: black;
-  }
-
-  .chhhHa:not(.using-icon) { background-color: white !important;
-  }
-
-  .chhhHa {
-	border-radius: 50%;
-	cursor: pointer;
-	height: 16px;
-	width: 16px;
-	background: black;
-  }
-  .eOWIUW.visible, .jCcKgB.active, .hrRSeq, .jsBALF, .cmSfbK, .kqDkXM, .emqEhB { background-color: white !important;
-  }
-
-  svg { 
-	color: #f8f9fa;
-	background-color: white !important;
-  }
-  button { 
-	background-color: white !important;
-  }
-  .feather { 
-
-	background-color: white !important;
-  }
+  
+  

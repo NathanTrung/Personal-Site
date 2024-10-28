@@ -7,9 +7,19 @@ import Partner1 from './images/Linkedin.png';
 import Partner2 from './images/Github.png';
 import Partner3 from './images/Facebook.png';
 import SwinburneLogo from './images/Swinburne.ico';
+import { useThemeContext } from '/Users/nathantrung/Desktop/Self Study/Personal-Site/src/ThemeContext.js';
+import { IconButton, Typography, Box } from '@mui/material';
+import { Brightness4, Brightness7 } from '@mui/icons-material';
+
+const WelcomeWrapper = () => {
+  const { mode, toggleTheme } = useThemeContext();
+
+  return <Welcome mode={mode} toggleTheme={toggleTheme} />;
+};
 
 class Welcome extends React.Component { 
     render() { 
+      const { mode, toggleTheme } = this.props;
         return ( 
 
 <div className="main">
@@ -25,6 +35,7 @@ class Welcome extends React.Component {
       <p><a class="btn medium inverse button-press" href="/projects">Explore My Projects &raquo; </a></p>
     </div>
     <div class="one_half"><a href="/about"><img src={Nathan} alt="Chibi Nathan" className="button-press"/></a></div>
+   
   </div>
 
   <div class="wrapper row3">
@@ -93,44 +104,6 @@ class Welcome extends React.Component {
   </div>
 </div>
 
-{/*
-<div class="wrapper bgded overlay" style={{ textAlign: 'center', padding: '0px'}}>
-  <div class="hoc container clear"> 
-    <div class="center btmspace-50">
-      <h3 class="font-x2 nospace"><b>The Team</b></h3>
-      <p class="nospace">View our team! Working together for the past 25+ years having experience in DevOps...</p>
-    </div>
-
-    <ul class="nospace group elements" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-      
-    
-      <li class="one_third"  >
-      <figure><img class="Profile"src={Luke} alt="" style={{scale:'0.9', width: '210px', height: '283px',padding:'5px', marginBottom: '5px'}}/>
-          <figcaption><a href="mailto:104024295@student.swin.edu.au">Luke Fares <br></br> 104024295</a></figcaption>
-        </figure>
-      </li>
-      <li class="one_third">
-        <figure style={{top:'-9px'}}><img class="Profile"src={Darragh} alt="" style={{scale:'0.9', width:'200px', height:'305px', padding:'5px', bottom: '20px'}}/>
-          <figcaption  ><a href="mailto:104024295@student.swin.edu.au">Darragh Hazell <br></br> 103063912</a></figcaption>
-        </figure>
-      </li>
-      
-        <li class="one_third">
-      <figure><img class="Profile"src={Jared} alt="" style={{scale:'0.9', width: '3000px', height: '308px',}}/>
-          <figcaption><a href="mailto:103492121@student.swin.edu.au">Jared Peng Teng <br></br> 103492121</a></figcaption>
-        </figure>
-      </li>
-
-      <li class="one_third" style={{ 'text-align': "center", backgroundColor: "transparent"}}>
-      <figure><img class="Profile"src={Nathan} alt="" />
-          <figcaption ><a href="https://github.com/NathanTrung">Nathan Trung <br></br> 103885695</a></figcaption>
-        </figure>
-      </li>
-      
-    </ul>
-  </div>
-</div>
-*/}
 </div>
 
         );

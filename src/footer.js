@@ -21,6 +21,7 @@ const Footer = () => {
           <ul>
             <li><a href="/" className="button-press">Home</a></li>
             <li><a href="/about" className="button-press">About Me</a></li>
+            <li><a href="/contact" className="button-press">Contact</a></li>
             <li><a href="/projects" className="button-press">Projects</a></li>
           </ul>
         </div>

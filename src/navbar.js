@@ -17,6 +17,9 @@ const NavBar = () => {
               <Link to="/about" className="button-press">About Me</Link>
             </li>
             <li>
+              <Link to="/contact" className="button-press">Contact</Link>
+            </li>
+            <li>
               <Link to="/projects" className="button-press">Projects</Link>
             </li>
           </div>
