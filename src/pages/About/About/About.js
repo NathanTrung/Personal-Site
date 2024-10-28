@@ -10,16 +10,8 @@ import Swinburne  from './images/Swinburne.png'
 
 
 class About extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isHovered: false, // State to track hover
-    };
-  }
 
   render() {
-    const { isHovered } = this.state; // Destructure isHovered from state
-    // Define timeline items
    
     return (
       <div className="main">

@@ -10,7 +10,6 @@ import SwinburneLogo from './images/Swinburne.ico';
 
 class Welcome extends React.Component { 
     render() { 
-      const { mode, toggleTheme } = this.props;
         return ( 
 
 <div className="main">
