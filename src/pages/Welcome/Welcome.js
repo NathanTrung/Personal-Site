@@ -7,9 +7,6 @@ import Partner1 from './images/Linkedin.png';
 import Partner2 from './images/Github.png';
 import Partner3 from './images/Facebook.png';
 import SwinburneLogo from './images/Swinburne.ico';
-import { useThemeContext } from '/Users/nathantrung/Desktop/Self Study/Personal-Site/src/ThemeContext.js';
-import { IconButton, Typography, Box } from '@mui/material';
-import { Brightness4, Brightness7 } from '@mui/icons-material';
 
 const WelcomeWrapper = () => {
   const { mode, toggleTheme } = useThemeContext();
