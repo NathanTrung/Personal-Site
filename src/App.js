@@ -9,7 +9,6 @@ import Welcome from './pages/Welcome/Welcome.js';
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from './ScrollToTop'; // Import the ScrollToTop component
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import Contact from './pages/Contact/Contact.js'; // Make sure the path is correct
 
 // Define animation variants for smoother transitions
@@ -44,8 +43,6 @@ const firebaseConfig = {
   measurementId: "G-HFM2HN0JVK"
 
 };
-const app = initializeApp(firebaseConfig);
-
 
 function App() {
   const location = useLocation(); // Get the current location for animations

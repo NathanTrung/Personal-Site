@@ -1,6 +1,5 @@
 import React from "react";
 import './css/main.css';
-import { line } from "framer-motion/client";
 import MeImage from './images/Me.png';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css'; // Import default styles
