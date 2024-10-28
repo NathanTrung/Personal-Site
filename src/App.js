@@ -10,9 +10,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from './ScrollToTop'; // Import the ScrollToTop component
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { ThemeContextProvider } from './ThemeContext';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 import Contact from './pages/Contact/Contact.js'; // Make sure the path is correct
 
 // Define animation variants for smoother transitions
@@ -70,9 +67,7 @@ function App() {
                 variants={pageVariants}
                 transition={{ duration: 0.2 }} // Adjusted duration
               >
-                <ThemeContextProvider>
                 <Welcome />
-                </ThemeContextProvider>
               </motion.div>
             }
           />
@@ -86,9 +81,7 @@ function App() {
                 variants={pageVariants}
                 transition={{ duration: 0.2 }} // Adjusted duration
               >
-                <ThemeContextProvider>
                 <About />
-                </ThemeContextProvider>
               </motion.div>
             }
           />
@@ -102,9 +95,7 @@ function App() {
                 variants={pageVariants}
                 transition={{ duration: 0.2 }} // Adjusted duration
               >
-                <ThemeContextProvider>
                 <Contact />
-                </ThemeContextProvider>
               </motion.div>
             }          
           />
@@ -118,9 +109,7 @@ function App() {
                 variants={pageVariants}
                 transition={{ duration: 0.2 }} // Adjusted duration
               >
-                <ThemeContextProvider>
                 <Projects />
-                </ThemeContextProvider>
               </motion.div>
             }
           />

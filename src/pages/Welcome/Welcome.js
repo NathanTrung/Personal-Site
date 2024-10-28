@@ -8,12 +8,6 @@ import Partner2 from './images/Github.png';
 import Partner3 from './images/Facebook.png';
 import SwinburneLogo from './images/Swinburne.ico';
 
-const WelcomeWrapper = () => {
-  const { mode, toggleTheme } = useThemeContext();
-
-  return <Welcome mode={mode} toggleTheme={toggleTheme} />;
-};
-
 class Welcome extends React.Component { 
     render() { 
       const { mode, toggleTheme } = this.props;
