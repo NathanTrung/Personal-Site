@@ -8,7 +8,6 @@ import About from './pages/About/About/About.js'
 import Welcome from './pages/Welcome/Welcome.js';
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from './ScrollToTop'; // Import the ScrollToTop component
-import { initializeApp } from "firebase/app";
 import Contact from './pages/Contact/Contact.js'; // Make sure the path is correct
 
 // Define animation variants for smoother transitions
@@ -25,23 +24,6 @@ const pageVariants = {
     opacity: 0,
     scale: 1.05,
   },
-};
-const firebaseConfig = {
-
-  apiKey: "AIzaSyDzRM8by5zATtB_GveifmNeGJmytUKDTQM",
-
-  authDomain: "nathantrung.firebaseapp.com",
-
-  projectId: "nathantrung",
-
-  storageBucket: "nathantrung.appspot.com",
-
-  messagingSenderId: "398072243119",
-
-  appId: "1:398072243119:web:f1fe995379031386d5055a",
-
-  measurementId: "G-HFM2HN0JVK"
-
 };
 
 function App() {
