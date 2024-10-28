@@ -147,6 +147,11 @@
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    
+    .projects-title {
+        padding-top: 80px;
+    }
 }
 /* Enhancements for small screens */
 @media (max-width: 768px) {
@@ -200,12 +205,17 @@
         width: 90%;
         height: auto;
     }
+
+    .projects-title {
+        padding-top: 80px;
+    }
 }
 
 /* Enhancements for extra small screens */
 @media (max-width: 480px) {
     .projects-title {
         font-size: 1.8em;
+
     }
 
     .projects-subtitle {
@@ -246,6 +256,10 @@
         width: 80%;
         height: auto;
     }
+
+    .projects-title {
+        padding-top: 180px;
+    }
 }
 
 /* Ensure lightbox takes up full screen on mobile */
@@ -258,6 +272,11 @@
     .enlarged-image {
         max-width: 100%;
         height: auto;
+    }
+
+    
+    .projects-title {
+        padding-top: 80px;
     }
 }
 

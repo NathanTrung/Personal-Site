@@ -5,6 +5,7 @@ import SwinBullLogo from './images/SwinBullLogo.png';
 import NAMoviesLogo from './images/NAMovies.png';
 import InferenceEngineLogo from './images/InferenceEngine.png';
 import SwinDevOpsLogo from './images/SwinDevOps.png'
+import Circuit from './images/Circuit.png'
 
 const projects = [
   {
@@ -43,6 +44,12 @@ const projects = [
   image: SwinDevOpsLogo,
   github: "https://github.com/NathanTrung/swindevops",
 },
+{
+    title: "Alarm Clock Circuitry",
+    description: "An original logic circuit for a basic alarm clock. The interface displays time in 12-hour format, indication of AM/PM, and provide the facilities to set the time and an alarm. When the alarm is enabled, an alarm LED is turned on when the time is reached. ",
+    image: Circuit,
+    github: "https://github.com/NathanTrung/Alarm-Clock-Circuit",
+  },
 ];
 
 const Projects = () => {
