@@ -154,12 +154,13 @@ body {
 /* Enhancements for small screens */
 @media (max-width: 768px) {
     .projects-title {
-        font-size: 2em;
+        font-size: 1.5em;
+        margin-top: 130px;
     }
 
     .projects-subtitle {
-        font-size: 1.5em;
-        margin: 20px 0;
+        font-size: 1.2em;
+
     }
 
     .project-card {

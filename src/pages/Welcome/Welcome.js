@@ -1,7 +1,7 @@
 import React from "react";
 import './css/main.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAt  } from '@fortawesome/free-solid-svg-icons'; 
+import { faAt, faWaveSquare  } from '@fortawesome/free-solid-svg-icons'; 
 import Nathan from './images/Nathan.png';
 import Partner1 from './images/Linkedin.png';
 import Partner2 from './images/Github.png';
@@ -21,7 +21,7 @@ class Welcome extends React.Component {
       <h1 class="uppercase" style={{ paddingTop: "75px"}}><b>Nathan Trung</b></h1>
       <h2 className="heading" style={{fontWeight:"normal"}}>Computer Science Student <FontAwesomeIcon icon={faAt} style={{fontWeight:"normal"}}/> <br/> Swinburne University of Technology <a href="https://www.swinburne.edu.au/"><img src={SwinburneLogo} alt="Swinburne University Logo" className="logo button-press"/></a> </h2>
       <h2 className="greeting-heading">Hi There<img src={Waving} alt="Waving" className="waving-hand"/></h2>
-      <p>Welcome to my personal website! I am currently pursuing a degree in Computer Science at Swinburne University. With strong proficiencies in Software & Web Development, Network administration, DevOps, and Game Development using Unity, I am dedicated to enhancing the Software Development Lifecycle.</p>
+      <p>Welcome to my personal website! I am currently pursuing a degree in Computer at Swinburne University. With strong proficiencies in Software & Web Development, Network administration, DevOps, and Game Development using Unity, I am dedicated to enhancing the Software Development Lifecycle.</p>
       <p>My focus is on Object-Oriented Programming (OOP) principles, emphasizing encapsulation, inheritance, and polymorphism to create modular, maintainable, and efficient software solutions.</p>
       <br></br>
       <p><a class="btn medium inverse button-press" href="/projects">Explore My Projects &raquo; </a></p>
