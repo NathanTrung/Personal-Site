@@ -712,6 +712,11 @@ PartnerButtons {
     h3 {
         font-size: 1.5rem; /* Make the heading smaller */
     }
+
+    .pageintro { 
+        margin-bottom: 500px;
+    }
+
 }
 
 .greeting-heading { 

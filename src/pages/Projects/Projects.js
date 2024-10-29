@@ -66,7 +66,7 @@ const Projects = () => {
 
     return (
         <div className="projects-page">
-            <h1 className="projects-title">My Projects</h1>
+            <h2 className="projects-title">My Projects</h2>
             <p className="projects-subtitle">Explore the work I've done in Software Development, Web Development, Game Development & A.I.</p>
             <div className="projects-grid">
                 {projects.map((project, index) => (
