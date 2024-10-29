@@ -33,7 +33,6 @@ const Footer = () => {
           <li><a href="https://www.instagram.com/nathantrung/" className="button-press">Instagram</a></li>
           <li><a href="https://www.linkedin.com/in/nathan-trung/" className="button-press">LinkedIn</a></li>
           <li><a href="https://x.com/NaifTrung" className="button-press">X</a></li>
-          <li><a href='mailto:nathantrung5@gmail.com, 103885695@student.swin.edu.au' className="button-press">Email</a></li>
           </ul>
         </div>
       </div>
@@ -44,7 +43,6 @@ const Footer = () => {
           <li><a href="https://www.instagram.com/nathantrung/" className="button-press"><FontAwesomeIcon icon={faInstagram}/></a></li>
           <li><a href="https://www.linkedin.com/in/nathan-trung/" className="button-press"><FontAwesomeIcon icon={faLinkedin}/></a></li>
           <li><a href="https://x.com/NaifTrung" className="button-press"><FontAwesomeIcon icon={faXTwitter} /></a></li>
-          <li><a href='mailto:nathantrung5@gmail.com, 103885695@student.swin.edu.au' className="button-press"><FontAwesomeIcon icon={faEnvelope} /></a></li>
         </ul>
       </div>
       <div className="footer-copyright">Site Accessed At: {new Date().getHours()}:{new Date().getMinutes()}:{new Date().getSeconds()} {new Date().getUTCDate()}/{new Date().getUTCMonth()+1}/{new Date().getUTCFullYear()} <br/>&copy; Nathan Trung
