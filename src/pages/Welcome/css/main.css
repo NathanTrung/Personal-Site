@@ -713,3 +713,20 @@ PartnerButtons {
         font-size: 1.5rem; /* Make the heading smaller */
     }
 }
+
+.greeting-heading { 
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-style:italic;
+    font-size: 40px;
+}
+
+.waving-hand { 
+    width: 15%;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.chibi { 
+    margin-top: 55px;
+}
