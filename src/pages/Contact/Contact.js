@@ -112,7 +112,7 @@ const Contact = () => {
                   autoHideDuration={6000}
                   onClose={handleCloseSnackbar}
                   message="Your message has been sent!"
-                  style={{ marginTop: "20px" }}
+                  style={{ marginTop: "20px", backgroundColor:"white" }}
                 />
               </Form>
             )}
