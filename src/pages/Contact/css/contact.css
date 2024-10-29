@@ -87,5 +87,12 @@ body {
     .contact-form {
         padding: 1rem;
     }
+
+    .input-field {
+        width: 75%; /* Adjusted width to make input fields shorter */
+    }
 }
 
+.MuiSnackbarContent-message, .MuiPaper-root {
+    background-color: white;
+}
