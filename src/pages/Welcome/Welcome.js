@@ -1,7 +1,7 @@
 import React from "react";
 import './css/main.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAt, faWaveSquare  } from '@fortawesome/free-solid-svg-icons'; 
+import { faAt  } from '@fortawesome/free-solid-svg-icons'; 
 import Nathan from './images/Nathan.png';
 import Partner1 from './images/Linkedin.png';
 import Partner2 from './images/Github.png';
