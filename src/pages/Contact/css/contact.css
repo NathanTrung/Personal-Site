@@ -93,6 +93,6 @@ body {
     }
 }
 
-.MuiSnackbarContent-message, .MuiPaper-root {
+.MuiSnackbarContent-message, .MuiPaper-root, .MuiPaper-elevation, .MuiSnackbarContent-root {
     background-color: white;
 }
