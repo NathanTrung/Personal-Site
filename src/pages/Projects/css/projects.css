@@ -16,7 +16,6 @@ body {
 .projects-subtitle {
     font-size: 1.3em;
     color: bl;
-    margin-bottom: 40px;
 }
 
 .projects-grid {
@@ -220,6 +219,8 @@ body {
     .projects-subtitle {
         font-size: 1.2em;
         margin: 15px 0;
+
+    
     }
 
     .project-card {
