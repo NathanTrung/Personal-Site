@@ -112,7 +112,15 @@ const Contact = () => {
                   autoHideDuration={6000}
                   onClose={handleCloseSnackbar}
                   message="Your message has been sent!"
-                  style={{ marginTop: "20px", backgroundColor:"white" }}
+                  sx={{
+                    "& .MuiSnackbarContent-root": {
+                      marginTop: "20px",
+                      backgroundColor: "white",
+                      borderRadius: "12px",
+                      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                      color: "black", // Ensure text color is visible on white background
+                    }
+                  }}
                 />
               </Form>
             )}
