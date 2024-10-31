@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import './css/main.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt  } from '@fortawesome/free-solid-svg-icons'; 
@@ -9,7 +9,6 @@ import Partner3 from './images/Facebook.png';
 import SwinburneLogo from './images/Swinburne.ico';
 import Waving from './images/hello.png';
 import AnimatedHeading from "../../components/animatedheading";
-import { Element, scroller } from 'react-scroll';
 
 class Welcome extends React.Component { 
   

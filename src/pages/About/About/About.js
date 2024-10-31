@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import './css/main.css';
 import MeImage from './images/Me.png';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
