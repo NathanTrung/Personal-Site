@@ -764,3 +764,12 @@ PartnerButtons {
 .chibi {
     animation: bounce 4s ease; /* Add bounce animation */
 }
+
+@media (max-width: 410px) {
+    .greeting-heading  {
+        font-size: 30px;
+    }
+
+    
+
+}

@@ -56,3 +56,11 @@
     animation: wave 1s ease-in-out infinite; /* Apply waving animation */
     vertical-align: middle; /* Align image with text */
 }
+
+
+@media (max-width: 410px) {
+    .word  {
+        margin-top: 30px;
+    }
+}
+    

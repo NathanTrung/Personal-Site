@@ -11,6 +11,7 @@
     z-index: 9999; /* On top of other elements */
     margin-top:75px;
     transition: opacity 0.3s ease;
+    overflow-y: auto;
 }
 .modal-overlay.show {
     opacity: 1; /* Fade in */
@@ -28,18 +29,20 @@
     overflow: hidden;
     transform: scale(0.9); /* Initial scale */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transform and opacity */
-
+    max-height: 90vh;
 }
 
 .modal-overlay.show .modal-content {
     opacity: 1; /* Fade in */
     transform: scale(1); /* Scale to full size */
+    overflow-y: auto;
 }
 
 .modal-pdf {
     width: 100%; /* Full width of modal content */
     height: 100%; /* Full height of modal content */
     border: none; /* No border */
+    min-height: 100%;
 }
 
 .close-button {
@@ -51,9 +54,12 @@
     font-size: 20px; /* Font size */
     cursor: pointer; /* Pointer on hover */
     transition: color 0.2s ease; /* Smooth color transition */
+
+    padding: 10px 20px; /* Increased padding for touch target */
 }
 
 .close-button:hover {
     color: red; /* Highlight color on hover */
     cursor: none;
 }
+
