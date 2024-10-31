@@ -9,10 +9,9 @@ const Modal = ({ isOpen, onClose, pdfUrl }) => {
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <button className="close-button" onClick={onClose}>X</button>
                 <iframe
-                    src={pdfUrl}
+                    src={'https://docs.google.com/document/d/17Pbi-Xk7vfvOqEW9vTl7renOsFO8U8OD/edit?usp=sharing&ouid=118265820719785767322&rtpof=true&sd=true'}
                     title="Resume"
                     className="modal-pdf"
-                    scrolling="yes" // Allow scrolling within iFrame
                 />
             </div>
         </div>

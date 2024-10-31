@@ -60,7 +60,111 @@
 
 @media (max-width: 410px) {
     .word  {
-        margin-top: 30px;
+        margin-top: 20px;
+        padding-right: 2px;
+    }
+}
+
+@media (max-width: 380px) {
+    .word {
+        margin-top: 25px;
+        padding-right: 4px;
+        
+    }
+
+    .letter { 
+        font-size: 80%;
+    }
+
+    .waving-hand { 
+        scale: 65%;
+        margin-top: 45px;
+    }
+
+    .greeting-heading { 
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 370px) {
+    .word  {
+        margin-top: 35px;
+        padding-right: 0px;
+        font-size: 95%;
+        overflow:visible;
+        margin-left: 0px;
+    }
+
+    .letter { 
+        padding-right: 0;
+    }
+
+    greeting-heading { 
+        margin-left: 50px;
+    }
+
+    .waving-hand { 
+        scale: 65%;
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 320px) {
+    .word  {
+        margin-top: 70px;
+        padding-right: 0px;
+        font-size: 95%;
+        overflow:visible;
+        margin-left: 0px;
+    }
+
+    .letter { 
+        padding-right: 0;
+    }
+
+    .waving-hand { 
+        scale: 65%;
+        margin-top: 45px;
+    }
+}
+    
+
+@media (max-width: 308px) {
+    .word  {
+        margin-top: 70px;
+        margin-right: 5px;
+        font-size: 85%;
+        overflow:visible;
+        margin-left: 0px;
+    }
+
+    .greeting-heading { 
+        margin-left: 50px;
+    }
+
+    .waving-hand { 
+        scale: 55%;
+        margin-top: 45px;
+    }
+}
+
+
+@media (max-width: 288px) {
+    .word  {
+        margin-top: 70px;
+        margin-right: px;
+        font-size: 85%;
+        overflow:visible;
+        margin-left: 0px;
+    }
+
+    .greeting-heading { 
+        margin-left: 40px;
+    }
+
+    .waving-hand { 
+        scale: 55%;
+        margin-top: 45px;
     }
 }
     
