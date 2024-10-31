@@ -586,3 +586,15 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .fa-arrow-right::before { 
 	margin-left:10px;
 }
+
+@media (max-width: 460px) {
+	.resume-prompt { 
+		margin-left: 35px;
+	}
+}
+
+@media (max-width: 408px) {
+	.resume-prompt { 
+		margin-left: 20px;
+	}
+}
