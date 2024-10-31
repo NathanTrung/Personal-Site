@@ -12,6 +12,7 @@
     background-color:#eae7dc; /* Set background color */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a shadow for elevation */
     z-index: 1000; /* Set a higher z-index to ensure it's above other content */
+    overflow: hidden;
 }
 
 nav {
@@ -82,6 +83,61 @@ nav {
     border-radius: 5px; /* Add rounded corners */
     font-weight: 700;
 }
+/* Navbar styling */
+.menuicon-button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menuicon {
+    height: 42px;
+    width: 42px;
+    color: black;
+  }
+  
+  /* Dropdown menu styling */
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width:max-content;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+  
+  /* Styling for each link */
+  .nav-items a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  /* Active link styling */
+  .nav-items a.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .nav-items a:hover {
+    background-color: #f5f5f5;
+  }
+  
 .navbar-right a {
     text-decoration: none; /* Remove underlines from links */
     color: #333; /* Text color for links */
@@ -105,31 +161,71 @@ nav {
     object-fit: contain; /* Ensures the image scales without distortion */
     vertical-align: middle;
 }
+@media (max-width: 900px) {
+    .navbar-left img {
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .navbar-right { 
+        height:fit-content;
+        padding-top: 5px;
+        
+    }
+
+
+    
+    
+}
+
 @media (max-width: 768px) {
     .navbar-left img {
         height: 40px;
         margin-left: 10px;
     }
+
+    .menuicon-button {
+        display: flex;
+    }
+
+    .navtoggle {
+        display: none;
+        color: transparent;
+    }
+
+    .navbar-right { 
+        padding: 0;
+        top: -20px;
+    }
+
+    .navbar-right li{ 
+        height: 15px;
+        top: -20px;
+    }
+
+    .nav-items { 
+        top: 80px !important;
+    }
+
 }
 @media (max-width: 480px) {
     .navbar-left img {
         height: 30px;
         margin-left: 5px;
     }
-}
 
-/* Refine the right elements on medium screens */
-@media (max-width: 768px) {
-    .navbar-right li {
-        font-size: 14px; /* Smaller font size */
-        padding: 6px 15px; /* Further reduced padding */
+    .menuicon-button {
+        display: flex;
     }
 
-    .navbar-right {
-        margin-right: 5px; /* Minimal right margin */
-        height: 35px; /* Smaller height to match logo size */
+    .navtoggle {
+        display: none;
+        color: transparent;
     }
+    
+    
 }
+
 
 /* Refine the right elements on small screens */
 @media (max-width: 480px) {
@@ -142,4 +238,40 @@ nav {
         margin-right: 2px; /* Almost no right margin */
         height: 25px; /* Align height with smallest logo size */
     }
+
+    .menuicon { 
+        padding-bottom: 10px !important;
+        
+    }
+
 }
+@media (max-width: 310px) {
+    .navbar-left img {
+        height: 30px;
+        margin-left: 5px; /* Adjust margin */
+    }
+    .navbar-right li {
+        font-size: 10px; /* Reduce font size further */
+        padding: 2px 5px; /* Reduce padding further */
+    }
+    .navbar-right {
+        margin-right: 0; /* Remove right margin */
+    }
+    .nav-items {
+        width: 100%; /* Ensure dropdown takes full width */
+        max-width: 100%; /* Prevent it from going outside */
+        scale: 50%;
+    }
+
+    .menuicon { 
+        magin-top: 30px !important;
+    }
+
+    .button-press { 
+        display: inline-table !important;
+    }
+}
+
+
+
+
