@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'; // Import useState from React
 import { Link, useLocation } from 'react-router-dom';
 import logo from './images/razor.png';
-import './navbar.css';
+import './css/navbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const NavBar = () => {
@@ -65,7 +65,7 @@ const NavBar = () => {
                 <MenuIcon className='menuicon' /> {/* Tailwind-compatible 3-line icon */}
               </button>
               {isOpen && (
-                <div className="nav-items button-press" ref={dropdownRef}>
+                <div className="nav-items button-press2" ref={dropdownRef}>
                   <Link to="/" className={location.pathname === '/' ? 'active unselectable' : ''} onClick={handleLinkClick}>Home</Link>
                   <Link to="/about" className={location.pathname === '/about' ? 'active' : ''} onClick={handleLinkClick}>About</Link>
                   <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''} onClick={handleLinkClick}>Contact</Link>

@@ -1,14 +1,15 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import NavBar from './navbar';
-import Footer from './footer';
+import NavBar from './components/navbar.js';
+import Footer from './components/footer.js';
 import Projects from './pages/Projects/Projects.js';
 import About from './pages/About/About/About.js'
 import Welcome from './pages/Welcome/Welcome.js';
 import { AnimatePresence, motion } from "framer-motion";
-import ScrollToTop from './ScrollToTop'; // Import the ScrollToTop component
+import ScrollToTop from './components/ScrollToTop.js'; // Import the ScrollToTop component
 import Contact from './pages/Contact/Contact.js'; // Make sure the path is correct
+import CustomCursor from './components/customcursor.js';
 
 // Define animation variants for smoother transitions
 const pageVariants = {
@@ -32,6 +33,7 @@ function App() {
   return (
     <div>
       <ScrollToTop /> {/* Add ScrollToTop here */}
+      <CustomCursor />
       <NavBar />
       <AnimatePresence>
         <Routes location={location} key={location.key}>

@@ -1,0 +1,56 @@
+/* cursor.css */
+body {
+    cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 20px; /* Cursor size */
+    height: 20px; /* Cursor size */
+    border: 2px solid #efb11d; /* Cursor border color */
+    border-radius: 50%; /* Make it circular */
+    pointer-events: none; /* Prevent mouse events on the cursor */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    z-index: 9999; /* Keep the cursor above other elements */
+}
+
+.custom-cursor.hover {
+    background-color: rgba(240, 6, 6, 0.2); /* Change color on hover */
+    transform: scale(1.5); /* Enlarge on hover */
+}
+
+/* Prevent default cursor from appearing on buttons and links */
+a,
+button,
+.hoverable {
+    cursor: none; /* Hide the default cursor */
+}
+
+/* Sparkles */
+.sparkle {
+    position: fixed;
+    width: 8px; /* Sparkle size */
+    height: 8px; /* Sparkle size */
+    background-color: #ffcc00; /* Sparkle color */
+    border-radius: 50%; /* Make it circular */
+    pointer-events: none; /* Prevent mouse events on sparkles */
+    opacity: 0; /* Start invisible */
+    z-index: 10000; /* Ensure sparkles are above all elements */
+    animation: sparkle-animation 1s forwards; /* Animation for sparkle */
+}
+
+/* Animation keyframes */
+@keyframes sparkle-animation {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); /* Start small */
+    }
+    50% {
+        opacity: 1; /* Fully visible */
+        transform: scale(1.2); /* Slightly larger */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+        transform: scale(0.5); /* Back to small */
+    }
+}

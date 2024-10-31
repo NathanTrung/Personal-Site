@@ -1,5 +1,7 @@
 /* navbar.css */
-
+.button-press2 {
+    transition: transform 0.1s ease; /* Controls the speed of the animation */
+}
 /* Style the entire navigation bar */
 .navbar-left {
     align-items: center; /* Vertically align links to the center */
@@ -55,6 +57,8 @@ nav {
 }
 
 
+
+
 .navbar-right {
     align-items: center; /* Vertically align links to the center */
     display: flex; /* Make the navbar items flex to align horizontally */
@@ -88,9 +92,9 @@ nav {
     display: none;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 18px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -104,7 +108,7 @@ nav {
   
   /* Dropdown menu styling */
   .nav-items {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     width:max-content;
@@ -132,6 +136,7 @@ nav {
   .nav-items a.active {
     background-color: #007bff;
     color: white;
+    
   }
   
   .nav-items a:hover {
@@ -205,7 +210,15 @@ nav {
 
     .nav-items { 
         top: 80px !important;
+        display: inline-block;
+        padding: -10px;
     }
+
+    .nav-items a.active {
+        background-color: #007bff;
+        color: white;
+        padding: 8px 12px;
+      }
 
 }
 @media (max-width: 480px) {
@@ -222,7 +235,11 @@ nav {
         display: none;
         color: transparent;
     }
-    
+    .nav-items a.active {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+      }
     
 }
 
@@ -260,11 +277,14 @@ nav {
     .nav-items {
         width: 100%; /* Ensure dropdown takes full width */
         max-width: 100%; /* Prevent it from going outside */
-        scale: 50%;
+        scale: 50%;    
+        display: inline-block;
+
     }
 
     .menuicon { 
         magin-top: 30px !important;
+        scale: 90%;
     }
 
     .button-press { 

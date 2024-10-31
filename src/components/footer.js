@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css'; // Import your footer CSS
+import './css/footer.css'; // Import your footer CSS
 import logo from './images/razor.png'; // Import your logo image
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faInstagram, faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons';
