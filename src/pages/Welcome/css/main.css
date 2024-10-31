@@ -723,10 +723,11 @@ PartnerButtons {
 
 }
 
-.greeting-heading { 
-    font-family: 'Playfair Display', serif;
-    font-weight: bolder;
-    font-style:italic;
+.greeting-heading, .word, .letter { 
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     font-size: 40px;
 }
 

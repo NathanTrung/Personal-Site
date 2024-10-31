@@ -12,6 +12,7 @@ const Modal = ({ isOpen, onClose, pdfUrl }) => {
                     src={pdfUrl}
                     title="Resume"
                     className="modal-pdf"
+                    scrolling="yes" // Allow scrolling within iFrame
                 />
             </div>
         </div>
