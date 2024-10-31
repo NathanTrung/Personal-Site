@@ -12,7 +12,7 @@ import Contact from './pages/Contact/Contact.js'; // Make sure the path is corre
 import CustomCursor from './components/customcursor.js';
 
 
-
+// Comment
 // Define animation variants for smoother transitions
 const pageVariants = {
   initial: {
