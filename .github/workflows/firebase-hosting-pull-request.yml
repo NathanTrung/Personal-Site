@@ -3,7 +3,12 @@ name: Deploy to Firebase
 on:
   push:
     branches:
-      - main  # Deploys on push to the main branch
+      - main               # Deploys on push to the main branch
+      - working_branch      # Deploys on push to the working branch
+  pull_request:
+    types: [closed]
+    branches:
+      - main               # Deploys on pull requests targeting the main branch if merged
 
 jobs:
   build-and-deploy:
@@ -30,4 +35,9 @@ jobs:
       - name: Deploy to Firebase
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  # Ensure you've added this in GitHub Secrets
-        run: firebase deploy
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/working_branch" ]]; then
+            firebase hosting:channel:deploy test-server
+          else
+            firebase deploy
+          fi
