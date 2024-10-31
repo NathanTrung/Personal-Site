@@ -610,6 +610,10 @@ PartnerButtons {
         display: block;
         width: 100%;
     }
+
+    .fa-arrow-right::before { 
+        display: none;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -732,6 +736,31 @@ PartnerButtons {
     margin-bottom: 15px;
 }
 
-.chibi { 
+.chibi {
     margin-top: 55px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for transform and opacity */
+}
+
+/* Scale up the image on hover */
+.chibi:hover {
+    transform: scale(1.1); /* Enlarge the image */
+    opacity: 0.8; /* Slightly fade out for effect */
+}
+
+/* Optional: Add a keyframe animation to make it bounce on load */
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Original position */
+    }
+    50% {
+        transform: translateY(-70px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+/* Apply the bounce animation when the image first loads */
+.chibi {
+    animation: bounce 4s ease; /* Add bounce animation */
 }

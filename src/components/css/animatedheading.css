@@ -1,0 +1,58 @@
+.greeting-heading {
+    display: inline-flex; /* Use inline-flex to ensure proper alignment */
+    align-items: center; /* Align items vertically in the center */
+    overflow: hidden; /* Hide overflow for the reveal effect */
+    position: relative; /* Allow absolute positioning */
+    padding-right: 10px; /* Optional: Add padding to the right to ensure space for the image */
+    margin-left:75px;
+}
+
+.word {
+    display: inline-block; /* Make each word behave like a block */
+    margin-left: 0.05rem; /* Space between words */
+}
+
+.letter {
+    display: inline-block; /* Make each letter behave like a block */
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start below its original position */
+    animation: reveal 0.5s forwards; /* Animation properties */
+}
+
+.space {
+    display: inline-block; /* Ensure space is rendered */
+    width: 0.5rem; /* Adjust space width as needed */
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Back to original position */
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.waving-hand {
+    margin-top:5px;
+    width: 60px; /* Adjust the size of the image as necessary */
+    height: 60px; /* Maintain aspect ratio */
+    animation: wave 1s ease-in-out infinite; /* Apply waving animation */
+    vertical-align: middle; /* Align image with text */
+}

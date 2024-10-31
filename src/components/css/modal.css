@@ -1,0 +1,59 @@
+.modal-overlay {
+    position: fixed; /* Stay in place */
+    top: 0; /* Stay at the top */
+    left: 0; /* Stay at the left */
+    right: 0; /* Stay at the right */
+    bottom: 0; /* Stay at the bottom */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
+    display: flex; /* Centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 9999; /* On top of other elements */
+    margin-top:75px;
+    transition: opacity 0.3s ease;
+}
+.modal-overlay.show {
+    opacity: 1; /* Fade in */
+    pointer-events: all; /* Enable interaction */
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0.9); /* Initial scale */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transform and opacity */
+
+}
+
+.modal-overlay.show .modal-content {
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Scale to full size */
+}
+
+.modal-pdf {
+    width: 100%; /* Full width of modal content */
+    height: 100%; /* Full height of modal content */
+    border: none; /* No border */
+}
+
+.close-button {
+    position: absolute; /* Positioning close button */
+    top: 50px; /* From the top */
+    right: 50px; /* From the right */
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: color 0.2s ease; /* Smooth color transition */
+}
+
+.close-button:hover {
+    color: red; /* Highlight color on hover */
+    cursor: none;
+}

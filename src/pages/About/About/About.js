@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './css/main.css';
 import MeImage from './images/Me.png';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -6,12 +6,29 @@ import 'react-vertical-timeline-component/style.min.css'; // Import default styl
 import StAlbans from './images/St-Albans.png'
 import Monash from './images/Monash.png'
 import Swinburne  from './images/Swinburne.png'
+import Modal from "../../../components/modal.js";
+import pdfURL from './resources/Resume.pdf';
+
 
 
 class About extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        isModalOpen: false,
+    };
+}
 
+openModal = () => {
+    this.setState({ isModalOpen: true });
+};
+
+closeModal = () => {
+    this.setState({ isModalOpen: false });
+};
   render() {
-   
+    const { isModalOpen } = this.state;
+
     return (
       <div className="main">
         <div className="wrapper bgded overlay">
@@ -21,8 +38,12 @@ class About extends React.Component {
               <p>I'm a Software Developer based in Melbourne, Australia.</p>
               <p>Since 2021, I've been passionate about transforming complex challenges into elegant software solutions. When I'm not coding, you'll find me exploring the latest technologies, reading manga, cooking, playing soccer, or working out at the gym.</p>
               <p>Before I discovered my passion for developing software, I was immersed in the study of Business, with a particular focus on Accounting and Microeconomics. My early academic pursuits provided me with a solid foundation in analytical thinking and problem-solving, which eventually fueled my interest in leveraging technology to create innovative solutions. </p>
+              <p className="resume-prompt"><span>Click</span> <span>My</span> <span>Photo</span> <span>to</span> <span>Discover</span> <span>My</span> <span>Resume</span><span> <i class="fas fa-arrow-right"></i></span></p>
             </div>
-            <div className="one_half"><a href="https://www.linkedin.com/in/nathan-trung/"><img src={MeImage} alt="Me" className="button-press"/></a></div>
+            <div className="one_half"> <a href="#" onClick={this.openModal}>
+                <img src={MeImage} alt="Me" className="resume-image button-press" />
+            </a>
+            <Modal isOpen={isModalOpen} onClose={this.closeModal} pdfUrl={pdfURL} /></div>
           </div>
           <div className="wrapper row3">
   <main className="hoc container clear">

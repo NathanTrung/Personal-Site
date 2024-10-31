@@ -5,8 +5,8 @@ body {
 
 .custom-cursor {
     position: fixed;
-    width: 20px; /* Cursor size */
-    height: 20px; /* Cursor size */
+    width: 15px; /* Cursor size */
+    height: 15px; /* Cursor size */
     border: 2px solid #efb11d; /* Cursor border color */
     border-radius: 50%; /* Make it circular */
     pointer-events: none; /* Prevent mouse events on the cursor */
@@ -54,3 +54,18 @@ button,
         transform: scale(0.5); /* Back to small */
     }
 }
+
+
+@media (max-width: 768px) { 
+    @keyframes sparkle-animation { 
+        0%, 50%, 100% {  display: none; }
+    }
+
+    .sparkle, .custom-cursor, .custom-cursor.hover { 
+        display: none;
+    }
+
+    body, a, button, .hoverable { 
+        cursor:default;
+    }
+} 

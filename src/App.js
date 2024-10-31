@@ -11,6 +11,8 @@ import ScrollToTop from './components/ScrollToTop.js'; // Import the ScrollToTop
 import Contact from './pages/Contact/Contact.js'; // Make sure the path is correct
 import CustomCursor from './components/customcursor.js';
 
+
+
 // Define animation variants for smoother transitions
 const pageVariants = {
   initial: {

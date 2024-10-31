@@ -461,8 +461,12 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
     transition: transform 0.1s ease; /* Controls the speed of the animation */
 }
 
-.button-press:active {
+.button-press:hover {
     transform: scale(0.95); /* Slightly shrinks the image to create a "pressed" effect */
+}
+
+.button-press:active {
+    transform: scale(1.05); /* Slightly shrinks the image to create a "pressed" effect */
 }
 
 .bMwRLQ { 
@@ -539,5 +543,46 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 	max-width: 100%; /* Ensures the image doesn't overflow its container */
 	height: auto; /* Maintains aspect ratio */
   }
-  
-  
+  .resume-prompt {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Prevent line breaks */
+    display: inline-block; /* Necessary for animation */
+    animation: textReveal 3s ease forwards; /* Initiate the animation */
+	margin-left: 65px;
+}
+
+@keyframes textReveal {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.resume-prompt span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.resume-prompt span:nth-child(1) { animation-delay: 0.3s; }
+.resume-prompt span:nth-child(2) { animation-delay: 0.6s; }
+.resume-prompt span:nth-child(3) { animation-delay: 0.9s; }
+.resume-prompt span:nth-child(4) { animation-delay: 1.2s; }
+.resume-prompt span:nth-child(5) { animation-delay: 1.5s; }
+.resume-prompt span:nth-child(6) { animation-delay: 1.8s; }
+.resume-prompt span:nth-child(7) { animation-delay: 2.1s; }
+.resume-prompt span:nth-child(8) { animation-delay: 2.5s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fa-arrow-right::before { 
+	margin-left:10px;
+}
