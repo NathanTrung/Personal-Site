@@ -37,7 +37,8 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}  # Ensure you've added this in GitHub Secrets
         run: |
           if [[ "${{ github.ref }}" == "refs/heads/working_branch" ]]; then
-            firebase hosting:channel:deploy test-server
+            firebase hosting:channel:deploy staging-server
+            firebase hosting:channel:list
           else
             firebase deploy
           fi
