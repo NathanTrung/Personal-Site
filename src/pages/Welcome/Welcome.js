@@ -31,7 +31,7 @@ class Welcome extends React.Component {
       <p><a class="btn medium inverse button-press" href="/projects">Explore My Projects &raquo; </a></p>
     </div>
     <div class="one_half"><a href="/about"><img src={Nathan} alt="Chibi Nathan" className="button-press chibi"/></a></div>
-    <AnimatedHeading text = "Testing" imageSrc={Waving} delay={0.5}/>
+    <AnimatedHeading text = "Testing 123" imageSrc={Waving} delay={0.5}/>
   </div>
 
   <div class="wrapper row3">
