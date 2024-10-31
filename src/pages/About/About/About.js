@@ -40,7 +40,7 @@ closeModal = () => {
               <p>Before I discovered my passion for developing software, I was immersed in the study of Business, with a particular focus on Accounting and Microeconomics. My early academic pursuits provided me with a solid foundation in analytical thinking and problem-solving, which eventually fueled my interest in leveraging technology to create innovative solutions. </p>
               <p className="resume-prompt"><span>Click</span> <span>My</span> <span>Photo</span> <span>to</span> <span>Discover</span> <span>My</span> <span>Resume</span><span> <i class="fas fa-arrow-right"></i></span></p>
             </div>
-            <div className="one_half"> <a href="#" onClick={this.openModal}>
+            <div className="one_half"> <a href={this.openModal} onClick={this.openModal}>
                 <img src={MeImage} alt="Me" className="resume-image button-press" />
             </a>
             <Modal isOpen={isModalOpen} onClose={this.closeModal} pdfUrl={pdfURL} /></div>
