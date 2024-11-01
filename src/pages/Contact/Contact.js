@@ -62,12 +62,12 @@ const Contact = () => {
           >
             {({ handleSubmit }) => (
               <Form onSubmit={handleSubmit}>
-                <h2 style={{ marginTop: "100px"}}>Contact Me</h2>
+                <h2 style={{ marginTop: "100px"}}>Get in Touch</h2>
                 <div className="my-story">
-      <p>
-      If you have any questions, inquiries, or opportunities for collaboration, feel free to reach out!<br></br> I'm always open to connecting with others who share my passion for technology and development.<br></br> You can contact me via email through the form or through my social media profiles.
-      </p>
-    </div>
+                  <p className="contact-description">
+                    Have questions, collaboration ideas, or just want to connect?<br></br> Reach out below, and I’ll get back to you soon!
+                  </p>
+                </div>
                 <div>
                   <Field
                     name="name"
